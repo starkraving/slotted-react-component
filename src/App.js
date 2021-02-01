@@ -1,26 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import SlottedComponent from './SlottedComponent';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends SlottedComponent {
+  render() {
+    return (
+      <div className="App">
+        <fieldset>
+          <legend>Foo block</legend>
+          <h4>Children:</h4>
+          <this.Slot name='foo'></this.Slot>
+        </fieldset>
+        <fieldset>
+          <legend>Bar block</legend>
+          <h4>Children:</h4>
+          <this.Slot name='bar'></this.Slot>
+        </fieldset>
+        <h4>Unspecified Children:</h4>
+        <this.Slot></this.Slot>
+      </div>
+    );
+  }
 }
 
 export default App;

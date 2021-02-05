@@ -9,7 +9,7 @@ const ActionListItem = ({children}) => {
         <span>
             <Slot name='actions'></Slot>
         </span>
-        <h4><Slot name='title'></Slot></h4>
+        <h4><Slot name='title'>Unnamed Item</Slot></h4>
     </li>
     )
 };

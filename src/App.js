@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import ActionListItem from './components/ActionListItem';
+import Modal from './components/Modal';
 
 const App = () => {
-  const startingWords = [
+  const startingTerms = [
     {
       word: 'carburation',
       type: 'noun',
@@ -47,21 +48,39 @@ const App = () => {
       ]
     }
   ]
-  const [words, setWords] = useState(startingWords);
+  const [terms] = useState(startingTerms);
+  const [modalChildren, setModalChildren] = useState([]);
+  const modalRef = useRef(null);
+
+  const openModal = () => {
+    modalRef.current.open();
+  };
+
+  const viewTerm = (idx) => () => {
+    const term = terms[idx];
+    setModalChildren([
+      <span slot='title'>{term.word}</span>,
+      <p><em>{term.type}</em></p>,
+      <ol>{term.defs.map((def, idx) => (<li key={`def_${idx}`}>{def}</li>))}</ol>
+    ]);
+    openModal();
+  };
 
   return (
     <div>
       <h1 style={{textAlign: 'center'}}>Modal Demo using Web Component-like "Slots"</h1>
       <ul style={{margin: '0 auto', maxWidth: '900px'}}>
         {
-          words.map((word, idx) => (
+          terms.map((word, idx) => (
             <ActionListItem key={idx}>
               <span slot='title'>{word.word}</span>
-              <button slot='actions'>View</button>
+              <button slot='actions' onClick={viewTerm(idx)}>View</button>
             </ActionListItem>
           ))
         }
       </ul>
+
+      <Modal ref={modalRef}>{modalChildren}</Modal>
     </div>
   )
 };

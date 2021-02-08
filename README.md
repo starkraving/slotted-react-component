@@ -34,7 +34,7 @@ const Modal = ({children}) => {
         <Overlay>
             <Dialog>
                 <heading>
-                    <h3><Slot name='title'>Default Modal Title</h3>
+                    <h3><Slot name='title'>Default Modal Title</Slot></h3>
                     <button onClick={closeModal}>&times;</button>
                 </heading>
                 <main>

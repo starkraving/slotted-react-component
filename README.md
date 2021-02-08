@@ -1,68 +1,56 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## useComponentSlots Modal Example App
 
-## Available Scripts
+This is an example application showing the usage of `useComponentSlots`.
 
-In the project directory, you can run:
+`useComponentSlots` is a custom React Hook that provides Web Component-style syntax for slots instead of passing 
+JSX into props. In our example Modal you would typically pass slots via named props:
 
-### `yarn start`
+```
+<Modal
+    title={<span>Modal Title</span>} 
+    buttons={<button onClick={closeModal}>Close</button>}
+>
+    <p>Modal Content</p>
+</Modal>
+```
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+With our custom hook it now looks like this:
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+```
+<Modal>
+    <span slot='title'>Modal Title</span>
+    <p>Modal Content</p>
+    <button slot='buttons' onClick={closeModal}>Close</button>
+</Modal>
+```
 
-### `yarn test`
+Our corresponding `Modal` component would look something like this:
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+const Modal = ({children}) => {
+    const [Slot, hasSlot] = useComponentSlots(children);
 
-### `yarn build`
+    return (
+        <Overlay>
+            <Dialog>
+                <heading>
+                    <h3><Slot name='title'>Default Modal Title</h3>
+                    <button onClick={closeModal}>&times;</button>
+                </heading>
+                <main>
+                    <Slot></Slot>
+                </main>
+                {
+                    hasSlot('buttons') && <footer>
+                        <Slot name='buttons'></Slot>
+                    </footer>
+                }
+            </Dialog>
+        </Overlay>
+    );
+};
+```
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This example shows some of the features of the Hook, including default content for slots and conditional checks for populated slots.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+You can view this modal example in action by going to: https://starkraving.github.io/slotted-react-compoent/

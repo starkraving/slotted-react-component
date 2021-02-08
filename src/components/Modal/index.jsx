@@ -12,7 +12,7 @@ const Modal = ({children}, ref) => {
         close: closeModal
     }));
 
-    const [Slot] = useSlots(children);
+    const [Slot, hasSlot] = useSlots(children);
 
 
     if (!isOpen) {
@@ -22,12 +22,17 @@ const Modal = ({children}, ref) => {
         <Overlay isOpen={isOpen} onClick={closeModal}>
             <Dialog>
                 <header>
-                    <h2><Slot name='title'>Dialog Title</Slot></h2>
+                    <h2><Slot name='title'>Word Dictionary Definition</Slot></h2>
                     <button onClick={closeModal}>&times;</button>
                 </header>
                 <main>
                     <Slot></Slot>
                 </main>
+                {
+                    hasSlot('buttons') && <footer>
+                        <Slot name='buttons'></Slot>
+                    </footer>
+                }
             </Dialog>
         </Overlay>
     );

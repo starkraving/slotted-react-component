@@ -18,7 +18,8 @@ const useSlots = (componentChildren) => {
                 ? slots.general
                 : (slots.hasOwnProperty(name) ? slots[name] : defaultChildren);
             return (<>{children}</>);
-        }
+        },
+        (slot) => slots.hasOwnProperty(slot) && slots[slot].length,
     ]
 };
 

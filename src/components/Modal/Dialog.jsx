@@ -28,9 +28,13 @@ const Dialog = styled.div`
 
     main {
         background-color: #fff;
-        padding: 10px 10px 15px;
+        padding: 10px;
         border-top: 1px solid #333;
-        border-radius: 0 0 10px 10px;
+
+        &:last-child {
+            border-radius: 0 0 10px 10px;
+            padding-bottom: 15px;
+        }
 
         p {
             margin: 0;
@@ -57,6 +61,25 @@ const Dialog = styled.div`
                     margin-top: 15px;
                 }
             }
+        }
+    }
+
+    footer {
+        background-color: #fff;
+        padding: 10px;
+        border-top: 1px solid #333;
+        text-align: right;
+
+        &:last-child {
+            border-radius: 0 0 10px 10px;
+            padding-bottom: 15px;
+        }
+
+        button {
+            background-color: #eee;
+            border-radius: 4px;
+            border: 1px solid #333;
+            padding: 4px;
         }
     }
 `;

@@ -16,9 +16,9 @@ const App = () => {
   const viewTerm = (idx) => () => {
     const term = terms[idx];
     setModalChildren([
-      <span slot='title'>{term.word}</span>,
-      <p><em>{term.type}</em></p>,
-      <ol>{term.defs.map((def, idx) => (<li key={`def_${idx}`}>{def}</li>))}</ol>
+      <span key='modal_title' slot='title'>{term.word}</span>,
+      <p key='modal_term_type'><em>{term.type}</em></p>,
+      <ol key='modal_term_defs'>{term.defs.map((def, idx) => (<li key={`def_${idx}`}>{def}</li>))}</ol>,
     ]);
     openModal();
   };

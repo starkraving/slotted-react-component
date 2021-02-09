@@ -80,6 +80,10 @@ const Dialog = styled.div`
             border-radius: 4px;
             border: 1px solid #333;
             padding: 4px;
+
+            & ~ button {
+                margin-left: 10px;
+            }
         }
     }
 `;

@@ -20,5 +20,9 @@ li.actionitem {
 
     & > span {
         float: right;
+
+        button ~ button {
+            margin-left: 10px;
+        }
     }
 }

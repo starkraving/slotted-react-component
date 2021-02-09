@@ -6,6 +6,9 @@ import Overlay from './Overlay';
 const Modal = ({children}, ref) => {
     const [isOpen, setIsOpen] = useState(false);
     const closeModal = () => setIsOpen(false);
+    const cancelClose = (e) => {
+        e.stopPropagation();
+    };
 
     useImperativeHandle(ref, () => ({
         open: () => setIsOpen(true),
@@ -20,7 +23,7 @@ const Modal = ({children}, ref) => {
     }
     return (
         <Overlay isOpen={isOpen} onClick={closeModal}>
-            <Dialog>
+            <Dialog onClick={cancelClose}>
                 <header>
                     <h2><Slot name='title'>Word Dictionary Definition</Slot></h2>
                     <button onClick={closeModal}>&times;</button>

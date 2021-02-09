@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f986571aa43c1041e65baf095536392c",
+    "revision": "3a4073fe1c9aaa1f39e7d6d9e91e0170",
     "url": "/slotted-react-compoent/index.html"
   },
   {
-    "revision": "66d78b90565380d1a0f7",
+    "revision": "07698c3b620c7c65809e",
     "url": "/slotted-react-compoent/static/css/main.d62b51cc.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/slotted-react-compoent/static/js/2.abd0ee81.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "66d78b90565380d1a0f7",
-    "url": "/slotted-react-compoent/static/js/main.4d9c5097.chunk.js"
+    "revision": "07698c3b620c7c65809e",
+    "url": "/slotted-react-compoent/static/js/main.306d2d56.chunk.js"
   },
   {
     "revision": "675d55f8e55c0472ced5",

@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/slotted-react-compoent/static/css/main.d62b51cc.chunk.css",
-    "main.js": "/slotted-react-compoent/static/js/main.4d9c5097.chunk.js",
-    "main.js.map": "/slotted-react-compoent/static/js/main.4d9c5097.chunk.js.map",
+    "main.js": "/slotted-react-compoent/static/js/main.306d2d56.chunk.js",
+    "main.js.map": "/slotted-react-compoent/static/js/main.306d2d56.chunk.js.map",
     "runtime-main.js": "/slotted-react-compoent/static/js/runtime-main.f4b21a6d.js",
     "runtime-main.js.map": "/slotted-react-compoent/static/js/runtime-main.f4b21a6d.js.map",
     "static/js/2.abd0ee81.chunk.js": "/slotted-react-compoent/static/js/2.abd0ee81.chunk.js",
     "static/js/2.abd0ee81.chunk.js.map": "/slotted-react-compoent/static/js/2.abd0ee81.chunk.js.map",
     "index.html": "/slotted-react-compoent/index.html",
-    "precache-manifest.073ba295109492ae4a2d318e006e1b96.js": "/slotted-react-compoent/precache-manifest.073ba295109492ae4a2d318e006e1b96.js",
+    "precache-manifest.03b5c51531808d3e4620317762ffe574.js": "/slotted-react-compoent/precache-manifest.03b5c51531808d3e4620317762ffe574.js",
     "service-worker.js": "/slotted-react-compoent/service-worker.js",
     "static/css/main.d62b51cc.chunk.css.map": "/slotted-react-compoent/static/css/main.d62b51cc.chunk.css.map",
     "static/js/2.abd0ee81.chunk.js.LICENSE.txt": "/slotted-react-compoent/static/js/2.abd0ee81.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.f4b21a6d.js",
     "static/js/2.abd0ee81.chunk.js",
     "static/css/main.d62b51cc.chunk.css",
-    "static/js/main.4d9c5097.chunk.js"
+    "static/js/main.306d2d56.chunk.js"
   ]
 }

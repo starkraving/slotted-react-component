@@ -67,7 +67,6 @@ const Dialog = styled.div`
     footer {
         background-color: #fff;
         padding: 10px;
-        border-top: 1px solid #333;
         text-align: right;
 
         &:last-child {

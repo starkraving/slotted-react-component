@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/slotted-react-compoent/precache-manifest.38e4731c533838db8f2c7810bf78b1d8.js"
+  "/slotted-react-compoent/precache-manifest.073ba295109492ae4a2d318e006e1b96.js"
 );
 
 self.addEventListener('message', (event) => {

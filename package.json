@@ -2,7 +2,7 @@
   "name": "with_slots",
   "version": "0.1.0",
   "private": true,
-  "homepage": "/slotted-react-compoent/",
+  "homepage": "/slotted-react-component/",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",

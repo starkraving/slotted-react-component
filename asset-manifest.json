@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/slotted-react-compoent/static/css/main.d62b51cc.chunk.css",
-    "main.js": "/slotted-react-compoent/static/js/main.085ecb53.chunk.js",
-    "main.js.map": "/slotted-react-compoent/static/js/main.085ecb53.chunk.js.map",
-    "runtime-main.js": "/slotted-react-compoent/static/js/runtime-main.f4b21a6d.js",
-    "runtime-main.js.map": "/slotted-react-compoent/static/js/runtime-main.f4b21a6d.js.map",
-    "static/js/2.abd0ee81.chunk.js": "/slotted-react-compoent/static/js/2.abd0ee81.chunk.js",
-    "static/js/2.abd0ee81.chunk.js.map": "/slotted-react-compoent/static/js/2.abd0ee81.chunk.js.map",
-    "index.html": "/slotted-react-compoent/index.html",
-    "precache-manifest.5770b556359175945e93678d682cb62c.js": "/slotted-react-compoent/precache-manifest.5770b556359175945e93678d682cb62c.js",
-    "service-worker.js": "/slotted-react-compoent/service-worker.js",
-    "static/css/main.d62b51cc.chunk.css.map": "/slotted-react-compoent/static/css/main.d62b51cc.chunk.css.map",
-    "static/js/2.abd0ee81.chunk.js.LICENSE.txt": "/slotted-react-compoent/static/js/2.abd0ee81.chunk.js.LICENSE.txt"
+    "main.css": "/slotted-react-component/static/css/main.d62b51cc.chunk.css",
+    "main.js": "/slotted-react-component/static/js/main.b40f5c62.chunk.js",
+    "main.js.map": "/slotted-react-component/static/js/main.b40f5c62.chunk.js.map",
+    "runtime-main.js": "/slotted-react-component/static/js/runtime-main.367d6199.js",
+    "runtime-main.js.map": "/slotted-react-component/static/js/runtime-main.367d6199.js.map",
+    "static/js/2.60001912.chunk.js": "/slotted-react-component/static/js/2.60001912.chunk.js",
+    "static/js/2.60001912.chunk.js.map": "/slotted-react-component/static/js/2.60001912.chunk.js.map",
+    "index.html": "/slotted-react-component/index.html",
+    "precache-manifest.205a39663b6efc1df19b92fb2f5ac237.js": "/slotted-react-component/precache-manifest.205a39663b6efc1df19b92fb2f5ac237.js",
+    "service-worker.js": "/slotted-react-component/service-worker.js",
+    "static/css/main.d62b51cc.chunk.css.map": "/slotted-react-component/static/css/main.d62b51cc.chunk.css.map",
+    "static/js/2.60001912.chunk.js.LICENSE.txt": "/slotted-react-component/static/js/2.60001912.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.f4b21a6d.js",
-    "static/js/2.abd0ee81.chunk.js",
+    "static/js/runtime-main.367d6199.js",
+    "static/js/2.60001912.chunk.js",
     "static/css/main.d62b51cc.chunk.css",
-    "static/js/main.085ecb53.chunk.js"
+    "static/js/main.b40f5c62.chunk.js"
   ]
 }

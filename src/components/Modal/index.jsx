@@ -1,5 +1,5 @@
 import React, { forwardRef, useImperativeHandle, useState } from 'react';
-import useSlots from '../../hooks/useSlots';
+import { useComponentSlots } from 'use-componentslots';
 import Dialog from './Dialog';
 import Overlay from './Overlay';
 
@@ -15,7 +15,7 @@ const Modal = ({children}, ref) => {
         close: closeModal
     }));
 
-    const [Slot, hasSlot] = useSlots(children);
+    const [Slot, hasSlot] = useComponentSlots(children);
 
 
     if (!isOpen) {

@@ -1,9 +1,9 @@
 import React from 'react';
-import useSlots from '../../hooks/useSlots';
+import { useComponentSlots } from 'use-componentslots';
 import './styles.scss';
 
 const ActionListItem = ({children}) => {
-    const [Slot] = useSlots(children);
+    const [Slot] = useComponentSlots(children);
     return (
     <li className='actionitem'>
         <span>

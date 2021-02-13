@@ -1,5 +1,5 @@
 import React, { forwardRef, useImperativeHandle, useState } from 'react';
-import { useComponentSlots } from 'use-componentslots';
+import useComponentSlots from 'use-componentslots';
 import Dialog from './Dialog';
 import Overlay from './Overlay';
 

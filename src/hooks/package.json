@@ -1,0 +1,28 @@
+{
+  "name": "use-componentslots",
+  "version": "0.2.2",
+  "description": "Web component-style slots for React",
+  "main": "useComponentSlots.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/starkraving/slotted-react-component.git"
+  },
+  "keywords": [
+    "React",
+    "React",
+    "Hooks"
+  ],
+  "author": "Mike Ritchie",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/starkraving/slotted-react-component/issues"
+  },
+  "homepage": "https://github.com/starkraving/slotted-react-component#readme",
+  "devDependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}

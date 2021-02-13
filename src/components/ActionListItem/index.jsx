@@ -1,5 +1,5 @@
 import React from 'react';
-import { useComponentSlots } from 'use-componentslots';
+import useComponentSlots from 'use-componentslots';
 import './styles.scss';
 
 const ActionListItem = ({children}) => {

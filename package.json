@@ -12,7 +12,7 @@
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.3",
     "styled-components": "^5.2.1",
-    "use-componentslots": "^0.1.2"
+    "use-componentslots": "^0.2.2"
   },
   "scripts": {
     "start": "react-scripts start",

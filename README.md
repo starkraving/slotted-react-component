@@ -19,11 +19,11 @@ When searching for "React component slots" often you find articles that show som
 In vanilla Javascript web components, however, the syntax is (to me) quite a bit more readable:
 
 ```
-<MyComponent>
+<my-component>
   <h1 slot="title">My Component Title</h1>
   <p slot="description">Some descriptive text</p>
   <p>General content inside the module</p>
-</MyComponent>
+</my-component>
 ```
 
 The `useComponentSlots` hook brings support for this style of syntax into your React components, making it extremely easy to not only
